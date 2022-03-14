@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Data_structures
 {
-    internal class Program
+    public class Program
     {
         public static void Main()
         {
             Console.WriteLine("-----------** Binary Search Tree **----------");
+            BinarySearchTree<int> bst = new BinarySearchTree<int>(56);
+            bst.Insert(30);
+            bst.Insert(70);
+            bst.Display();
         }
     }
 }
