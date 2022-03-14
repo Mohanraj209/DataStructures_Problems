@@ -33,7 +33,16 @@ namespace Data_structures
                 mybinarynode.Root();
                 mybinarynode.Display(mybinarynode.root);
                 Console.WriteLine("The number of nodes in BST:{0}", mybinarynode.Size(mybinarynode.root));
-            }
+                bool found = mybinarynode.Search(mybinarynode.root, 90);
+                if (found == true)
+                {
+                  Console.WriteLine("Key found");
+                }
+                  else
+                {
+                  Console.WriteLine("Key not found");
+                }
+        }
         
     }
 }
